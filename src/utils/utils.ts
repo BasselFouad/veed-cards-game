@@ -1,7 +1,5 @@
-import env from "dotenv";
 import { Card } from "../modules/Card";
 import { Player } from "../modules/Player";
-env.config();
 
 export function generateDeck(): Array<Card> {
   const cardArray = new Array<Card>(52);
