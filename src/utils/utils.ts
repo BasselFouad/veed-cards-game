@@ -17,11 +17,12 @@ export const simulateRound = (playerOne: Player, playerTwo: Player) => {
   let currentPlayerOneCard = playerOne.playRound();
   let currentPlayerTwoCard = playerTwo.playRound();
 
+  console.log("PLAYER ONE CARD", currentPlayerOneCard?.numericValue);
+  console.log("PLAYER TWO CARD", currentPlayerTwoCard?.numericValue);
+
   if (currentPlayerOneCard!.numericValue > currentPlayerTwoCard!.numericValue) {
     playerOne.incrementScore();
   } else {
     playerTwo.incrementScore();
   }
-  console.log("PLAYER ONE CARD", currentPlayerOneCard?.numericValue);
-  console.log("PLAYER TWO CARD", currentPlayerTwoCard?.numericValue);
 };
