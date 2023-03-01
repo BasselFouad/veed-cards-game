@@ -1,6 +1,6 @@
-import { Card } from "./modules/Card";
-import { Player } from "./modules/Player";
-import { simulateRound } from "./utils";
+import { Card } from "../../modules/Card";
+import { Player } from "../../modules/Player";
+import { simulateRound } from "../utils";
 
 it("Validates that per round if a player has a higher card, they will get an extra point to their score", () => {
   const playerOne = new Player("Bassel");
