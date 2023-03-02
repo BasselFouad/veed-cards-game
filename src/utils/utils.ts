@@ -20,7 +20,9 @@ export const simulateRound = (playerOne: Player, playerTwo: Player) => {
 
   if (currentPlayerOneCard!.numericValue > currentPlayerTwoCard!.numericValue) {
     playerOne.incrementScore();
+    console.log("CURRENT ROUND WINNER:", playerOne.name);
   } else {
     playerTwo.incrementScore();
+    console.log("CURRENT ROUND WINNER:", playerTwo.name);
   }
 };

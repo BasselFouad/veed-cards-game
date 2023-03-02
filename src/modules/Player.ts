@@ -1,7 +1,7 @@
 import { Card } from "./Card";
 
 export class Player {
-  protected name: string;
+  public name: string;
   protected score: number;
   public playerCards: Array<Card>;
 

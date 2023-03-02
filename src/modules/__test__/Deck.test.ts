@@ -7,7 +7,7 @@ it("Validates that the deck has 52 unique cards", () => {
   expect(shuffledDeckCards).toHaveLength(52);
   expect(shuffledDeckCards).toBeDistinct();
 });
-it("Validates that on split, each player recives 26 cards", () => {
+it("Validates that on split, each player receives 26 cards", () => {
   const playerOne = new Player("Bassel");
   const playerTwo = new Player("Bien");
 

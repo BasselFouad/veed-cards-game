@@ -18,9 +18,16 @@ const startGame = () => {
     console.log("CURRENT ROUND", currentRound);
     simulateRound(playerOne, playerTwo);
     console.log("----------SCORE----------");
-    console.log("PLAYER ONE SCORE", playerOne.getScore());
-    console.log("PLAYER TWO SCORE", playerTwo.getScore());
+    console.log(`${playerOne.name} score : ${playerOne.getScore()}`);
+    console.log(`${playerTwo.name} score : ${playerTwo.getScore()}`);
     console.log("=========================");
   }
+  console.log(
+    `WINNER ${
+      playerOne.getScore() > playerTwo.getScore()
+        ? playerOne.name
+        : playerTwo.name
+    }`
+  );
 };
 startGame();
